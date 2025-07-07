@@ -1,0 +1,40 @@
+.rightbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    height: 100vh;
+    width: 250px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--card-border);
+    color: var(--text-primary);
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--card-border);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .tag-list, .stats {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  
+  .tag-list li, .stats li {
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    color: var(--text-secondary);
+  }
+  
