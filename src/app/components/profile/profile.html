@@ -1,0 +1,13 @@
+<div class="profile-container" *ngIf="user">
+  <h2>Profilim</h2>
+  <div class="profile-info">
+    <p><strong>Ad:</strong> {{ user.name }}</p>
+    <p><strong>Soyad:</strong> {{ user.surname }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Puan:</strong> {{ user.point }}</p>
+  </div>
+</div>
+
+<ng-template #loadingTpl>
+  <p style="padding: 1rem;">Yükleniyor...</p>
+</ng-template>

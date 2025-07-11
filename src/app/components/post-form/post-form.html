@@ -1,0 +1,25 @@
+<div class="form-container">
+    <h2>Post Oluştur</h2>
+
+    <form (ngSubmit)="submit()">
+        <label>Başlık</label>
+        <input type="text" [(ngModel)]="post.title" name="title" required />
+
+        <label>Açıklama</label>
+        <textarea [(ngModel)]="post.description" name="description" rows="4" required></textarea>
+
+        <label>Puan</label>
+        <input type="number" [(ngModel)]="post.point" name="point" required />
+
+        <label>Konum</label>
+        <input type="text" [(ngModel)]="post.location" name="location" required />
+
+        <label>Tür</label>
+        <select [(ngModel)]="post.type" name="type">
+            <option value="HELP">Yardım</option>
+            <option value="OFFER">Yetenek / Hizmet</option>
+        </select>
+
+        <button type="submit">Oluştur</button>
+    </form>
+</div>

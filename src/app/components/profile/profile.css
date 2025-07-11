@@ -1,0 +1,13 @@
+.profile-container {
+    padding: 2rem;
+  }
+  
+  .profile-info {
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #1f1f1f;
+    border-radius: 0.75rem;
+    border: 1px solid #2a2a2a;
+    line-height: 1.6;
+  }
+  

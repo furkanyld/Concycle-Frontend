@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="nav-content">
+    <div></div>
+    <div class="nav-links">
+      <ng-container *ngIf="authService.isLoggedIn(); else notLoggedIn">
+        <button (click)="logout()">Çıkış Yap</button>
+      </ng-container>
+      <ng-template #notLoggedIn>
+        <a routerLink="/login">Giriş Yap</a>
+        <a routerLink="/register">Kayıt Ol</a>
+      </ng-template>
+    </div>
+  </div>
+</nav>

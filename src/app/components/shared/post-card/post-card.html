@@ -1,12 +1,17 @@
-<div class="card">
-    <div class="card-header">
-        <h3 class="title">{{ post.title }}</h3>
-        <span class="point">{{ post.point }} Puan</span>
-    </div>
-    <p>{{ post.description }}</p>
-    <small>• {{ post.location }}</small>
-    <div class="card-footer">
-        <small>• {{ post.owner.name }} {{ post.owner.surname }}</small><br />
-        <button>Başvur</button>
-    </div>
+<div class="post">
+  <div class="post-header">
+    <span class="title">{{ post.title }}</span>
+    <span class="points">{{ post.point }} Puan</span>
+  </div>
+
+  <p class="desc">{{ post.description }}</p>
+
+  <div class="post-meta">
+    <span>📍 {{ post.location }}</span>
+    <span>👤 {{ post.ownerName }}</span>
+  </div>
+
+  <div class="post-footer">
+    <button class="apply-btn">Başvur</button>
+  </div>
 </div>

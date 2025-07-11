@@ -1,0 +1,15 @@
+<div class="card">
+    <h2>Kayıt Ol</h2>
+  
+    <form (ngSubmit)="register()">
+      <input type="text" [(ngModel)]="form.name" name="name" placeholder="Ad" required />
+      <input type="text" [(ngModel)]="form.surname" name="surname" placeholder="Soyad" required />
+      <input type="email" [(ngModel)]="form.email" name="email" placeholder="E-posta" required />
+      <input type="password" [(ngModel)]="form.password" name="password" placeholder="Şifre" required />
+  
+      <button type="submit">Kayıt Ol</button>
+    </form>
+  
+    <p *ngIf="error" style="color: red;">{{ error }}</p>
+  </div>
+  

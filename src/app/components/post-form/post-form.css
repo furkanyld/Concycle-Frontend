@@ -1,0 +1,39 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    border: none;
+    background-color: #007acc;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005f99;
+  }
+  

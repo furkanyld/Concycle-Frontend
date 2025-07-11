@@ -1,12 +1,12 @@
 import { User } from "./user.model";
 
 export interface Post {
-  id: string;
+  id: number;
   title: string;
   description: string;
   location: string;
-  type: 'Yardım' | 'Yetenek';
+  type: 'HELP' | 'TALENT';
   point: number;
-  owner: User;
+  ownerName: string;
   createdAt?: string;
 }
